@@ -1,0 +1,717 @@
+body{
+  overflow-x: hidden;
+}
+.down{
+  font-size: 12px
+}
+.tiger-collapse .ads{
+  position:relative;
+}
+.tiger-collapse .s-drop-down{
+  left: 41%;
+  top: 20px
+}
+.s-drop-down{
+  position: absolute;
+  top:50px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
+  opacity: 0;
+  -webkit-transition: transform 0.5s ease-in-out, opacity 0.6s cubic-bezier(0, 0, 0.32, 0.3), max-width .5s ease, max-height .5s ease;
+  -moz-transition: transform 0.5s ease-in-out, opacity 0.6s cubic-bezier(0, 0, 0.32, 0.3), max-width .5s ease, max-height .5s ease;
+  -o-transition: transform 0.5s ease-in-out, opacity 0.6s cubic-bezier(0, 0, 0.32, 0.3), max-width .5s ease, max-height .5s ease;
+  -ms-transition: transform 0.5s ease-in-out, opacity 0.6s cubic-bezier(0, 0, 0.32, 0.3), max-width .5s ease, max-height .5s ease;
+  transition: transform 0.5s ease-in-out, opacity 0.6s cubic-bezier(0, 0, 0.32, 0.3), max-width .5s ease, max-height .5s ease;
+}
+.ads:hover .s-drop-down{
+  transform:rotateX(0deg);
+  opacity: 1
+}
+ul li{
+  list-style: none;
+}
+.personal:hover .s-drop-down{
+  transform:rotateX(0deg);
+  opacity: 1
+}
+.personal .s-drop-down{
+  top: 65px;
+  left: 0
+}
+.s-drop-down ul{
+  width: 100% !important;
+  background: #FFF;
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px #8c8b8b;
+}
+.s-drop-down ul li{
+  text-align: right !important;
+  margin: 0;
+  float: none !important;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 10px;
+  display: block !important;
+}
+.s-drop-down ul li a{
+  text-align: right !important;
+  margin: 0;
+  float: none !important;
+  cursor: pointer;
+  transition: color .3s ease;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px;
+  padding-bottom: 10px;
+  display: block !important;
+  color: #000 !important
+}
+.s-drop-down ul li a:hover{
+  color: #1BC602 !important
+}
+.right{
+  float: right;
+}
+.soup-container{
+  width: 90%;
+  margin: auto;
+}
+::selection{
+  background-color: #1BC602;
+  color: #FFF
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+.clear{
+  clear: both;
+}
+.rate-color{
+  color: #EBD072 !important
+}
+ul{
+  margin: 0;
+  padding: 0
+}
+a{
+  color: #000
+}
+a:hover{
+  text-decoration: none;
+  color: #000
+}
+.toggle span{
+  display          : block ;
+  width            : 35px  ;
+  height           : 2px   ;
+  background-color : #FFF  ;
+  margin-bottom    : 10px  ;
+  margin-top       : 10px  ;
+
+}
+.toggle{
+  background       :none             ;
+  float            : right           ;
+  padding          : 0px 15px        ;
+  border           : none            ;
+  cursor           : pointer         ;
+  position         : absolute        ;
+  top              : -300px          ;
+  z-index          : 99999           ;
+  left            : -19px           ;
+  outline          : none !important ;
+  display          : none            ;
+}
+.tiger-collapse{
+  position         : fixed             ;
+  top              :-100%              ;
+  width            : 100%              ;
+  left             : 0                 ;
+  z-index          : 99999                 ;
+  background-color :#FFF               ;
+  text-align: center ;
+  overflow: auto;
+}
+
+.tiger-collapse ul { margin : 0px ; list-style-type : none ; margin-top: 15px; padding: 0}
+
+.rotate{
+  -webkit-transform : rotate(45deg) ;
+  -moz-transform    : rotate(45deg) ;
+  -ms-transform     : rotate(45deg) ;
+  -o-transform      : rotate(45deg) ;
+  transform         : rotate(45deg) ;
+  position          : absolute      ;
+  top               : 0             ;
+}
+
+.rotate2{
+  -webkit-transform : rotate(-45deg) ;
+  -moz-transform    : rotate(-45deg) ;
+  -ms-transform     : rotate(-45deg) ;
+  -o-transform      : rotate(-45deg) ;
+  transform         : rotate(-45deg) ;
+}
+
+.tiger-collapse ul li { margin : 0px ;}
+
+.tiger-collapse li a{
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.tiger-collapse .tiger-cart a{
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.tiger-collapse li a:hover,.tiger-collapse .tiger-cart a:hover{
+  color: #1BC602
+}
+.tiger-collapse .personal .user-name{
+  display: block;
+  color: #000;
+  line-height: 0
+}
+
+/*----------------End Tablet NavBar-----------------*/
+/* End General */
+/* Start Header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%
+}
+/* Scroll */
+.logo-scroll{
+  background-color: #FFF;
+}
+.logo-scroll .soup-navbar{
+  padding: 5px 0 !important
+}
+.logo-scroll .soup-navbar .logo img{
+  width: 65px !important
+}
+.logo-scroll .soup-navbar .list ul{
+  margin-top: 20px !important
+}
+.logo-scroll ul li a{
+  color: #000 !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.logo-scroll .soup-navbar .cart a{
+  margin-top: 25px !important
+}
+.logo-scroll ul li a:hover{
+  color: #1BC602 !important
+}
+.logo-scroll .s-active{
+  border-bottom: 2px solid #1BC602;
+  color: #1BC602 !important
+}
+.logo-scroll .soup-navbar .cart a{
+  color: #000 !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.logo-scroll .soup-navbar .cart a:hover{
+  color: #1BC602 !important
+}
+.logo-scroll .toggle span{
+  background-color: #000
+}
+/* Scroll */
+.header .soup-navbar{
+  padding: 15px 0
+}
+.header .soup-navbar .logo img{
+  width: 80px;
+  float: right;
+}
+.logo-hidden{
+  display: none;
+}
+.header .soup-navbar .list ul{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px
+}
+.header .soup-navbar .list ul li{
+  list-style: none;
+  float: right;
+  margin-left: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.header .soup-navbar .list ul li a{
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.s-active{
+  border-bottom: 2px solid #1BC602;
+  color: #1BC602 !important
+}
+.header .soup-navbar .list ul li a:hover{
+  text-decoration: none;
+  color: #1BC602;
+}
+.header .soup-navbar .cart a{
+  position: relative;
+  float: right;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  padding-left: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.header .soup-navbar .cart a:hover{
+  color:#1BC602
+}
+.hide{
+  display: none;
+}
+.personal{
+  position: absolute;
+  top: 30px;
+  left: 150px
+}
+/* .personal a{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+.personal a img{
+  width: 50px;
+  border-radius: 50%
+}
+/* End Header */
+.soup-item1{
+  background: url("../images/Slider/slider3.jpg") no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+}
+.soup-item2{
+  background: url("../images/Slider/slider3.jpg") no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+}
+.soup-item3{
+  background: url("../images/Slider/slider3.jpg") no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+}
+/* Start Section About */
+.about{
+  margin-top: 60px
+}
+.about h2{
+  margin-bottom: 60px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 45px;
+  font-weight: 500
+}
+.about p{
+  text-align: right;
+  line-height: 35px;
+  font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500
+}
+/* End Section About */
+/* Start Section contact */
+.cont{
+  background: url("../images/Slider/contact.png") no-repeat center center;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+.cont form{
+  height: 100%;
+  margin: 50px 0;
+}
+.cont form .user-name input,.cont form .message textarea{
+  width: 50%;
+  background-color: rgba(0,0,0,.4);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  color: #1BC602;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  margin: 25px auto;
+  display: block;
+}
+.cont form .send button{
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  margin: 35px auto;
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  -moz-transition:  color .3s ease-in-out, background-color .3s ease-in-out;
+  -o-transition:  color .3s ease-in-out, background-color .3s ease-in-out;
+  -ms-transition:  color .3s ease-in-out, background-color .3s ease-in-out;
+  transition:  color .3s ease-in-out, background-color .3s ease-in-out;
+  display: block;
+  outline: none
+}
+.cont form .send button:hover{
+  background-color: #1BC602;
+  color: #FFF
+}
+.cont form .message textarea{
+  resize: none;
+  height: 150px
+}
+.cont form .user-name input:focus,.cont form .message textarea:focus{
+  border: none
+}
+.cont form .user-name input::placeholder,.cont form .message textarea::placeholder{
+  color: #1BC602;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 18px
+}
+.cont .overlay{
+  background-color: rgba(0,0,0,.3)
+}
+.contact{
+  margin-top: 60px
+}
+.contact h2{
+  margin-bottom: 60px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 45px;
+  font-weight: 500
+}
+/* End Section contact */
+/* Start Personal Page */
+.personal-page .header{
+  background: url('../images/Slider/slider6.png') no-repeat;
+  background-size: cover;
+}
+.sign-up-page .header{
+  background: url('../images/Slider/slider7.png') no-repeat;
+  background-size: cover;
+}
+.personal-details{
+  box-shadow: 5px 5px 10px 1px #b1b1b1,
+             -5px -5px 10px 1px #b1b1b1;
+  border-radius: 15px;
+  padding: 50px 0;
+  width: 95%;
+  margin: 270px auto 50px auto;
+}
+.personal-details .personal-photo{
+  width: 50%;
+  margin: auto;
+  padding: 30px 0
+}
+.personal-details .personal-photo .photo{
+  width: 130px;
+  margin: auto;
+}
+.personal-details .personal-photo .photo .personal-icon{
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px 1px #5f5d5d;
+}
+.personal-details .personal-photo .name h3{
+ font-family: 'Tajawal', sans-serif;
+ text-align: center;
+ margin-top: 25px;
+ color:#5d5c5c;
+ font-weight: 500;
+}
+.helps-details{
+  border: 1px solid #1BC602;
+  border-radius: 15px;
+  padding: 50px 0 50px 0;
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 5px 5px 10px 2px #AAA,
+              -5px -5px 10px 2px #AAA;
+}
+.helps-details .soup-container .row div span{
+  text-align: center;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px
+}
+.helps-details .details{
+  margin-top: 25px
+}
+.helps-details .details p{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: right;
+  line-height: 35px;
+}
+.helps-details .details p:first-of-type{
+  font-weight: 600;
+  font-size: 25px
+}
+.reset-buttons a{
+  background-color: #1BC602;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px 60px;
+  display: inline-block;
+  border-radius: 15px
+}
+.reset-buttons a:first-of-type{
+  margin-left: 35px
+}
+/* End Personal Page */
+/* Start sign-up-page */
+.sign-up-page .personal-photo input{
+  display: none;
+}
+.sign-up-page .personal-photo .personal-icon{
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  border: 1px solid #1BC602;
+  color: #1BC602;
+  cursor: pointer;
+}
+.sign-up-page .name h3{
+  font-size: 22px !important
+}
+.sign-up .input-g{
+  margin-bottom: 25px
+}
+.sign-up .input-g input{
+  width: 300px;
+  padding: 5px 10px;
+  background-color: rgba(27, 198, 2, 0.4);
+  border: none;
+  color: #000;
+  font-family: 'Tajawal', sans-serif;
+  border-radius: 15px;
+  font-size: 18px;
+  outline: none
+}
+.sign-up .input-g input[type="submit"]{
+  background-color:#1BC602;
+  padding: 15px 35px;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  width: auto;
+  margin-top: 50px
+}
+.personal-details .button a{
+  background-color:#FFF;
+  padding: 15px 35px;
+  color: #000;
+  font-family: 'Tajawal', sans-serif;
+  width: auto;
+  margin-top: 50px;
+  display: inline-block;
+  border-radius: 15px;
+  float: right;
+  margin-left: 35px;
+  box-shadow: 5px 5px 10px 1px #AAA
+}
+.sign-active{
+  background-color: #1BC602 !important;
+  color: #FFF !important
+}
+.sign-up label{
+  width: 150px;
+  margin-left: 15px;
+  text-align: right;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  font-weight: 500
+}
+/* End sign-up-page */
+/* Start Help-page */
+.help-page .helps-details .row div:nth-child(2),.help-page .helps-details .row div:nth-child(3){
+  margin-top: 35px
+}
+.help-page .result-search .helps-details .row div:nth-child(2),.help-page  .result-search .helps-details .row div:nth-child(3){
+  margin-top:0
+}
+.result-search a{
+  background-color: #1BC602;
+  padding: 15px 35px;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  width: auto;
+  margin-top: 10px;
+  border-radius: 15px
+}
+.help-page .helps-details .row form label{
+  width: 150px;
+  margin-left: 15px;
+  text-align: right;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  font-weight: 500
+}
+.help-page .helps-details .row form input,.details textarea{
+  width: 300px;
+  padding: 5px 10px;
+  background-color: rgba(27, 198, 2, 0.4);
+  border: none;
+  color: #000;
+  font-family: 'Tajawal', sans-serif;
+  border-radius: 15px;
+  font-size: 18px;
+  outline: none
+}
+.details textarea{
+  resize: none;
+  width: 100%;
+}
+.help-page .helps-details .row form input[type="submit"]{
+  background-color:#1BC602;
+  padding: 15px 35px;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  width: auto;
+  margin-top: 50px;
+}
+.help-types a{
+  background-color: #888787;
+  margin-left: 15px;
+  color: #FFF;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+.help-types a:hover{
+  background-color: #1BC602
+}
+.help-active{
+  background-color: #1BC602 !important
+}
+/* End Help-page */
+@media (max-width: 1070px){
+.tiger-tablet-nav {
+    top: 50px;
+  }
+  .header .list,.header .cart{
+    display: none;
+  }
+  .toggle{
+    top: 20px;
+    display: block;
+    left: 25px
+  }
+  .header .soup-navbar .logo img{
+    width: 50%
+  }
+  .header .cart {
+    padding-top: 9px
+  }
+  .logo{
+    max-width: 30%;
+    flex: 0 0 30%
+  }
+  .personal{
+    max-width: 30%;
+    flex: 0 0 30%
+  }
+  .cont form .user-name input,
+  .cont form .message textarea,
+  .cont form .send button{
+    width: 70%
+  }
+  .s-drop-down{
+    left: 157px;
+    top:140px;
+  }
+  .tiger-collapse .s-drop-down ul{
+    padding: 15px
+  }
+}
+@media (max-width:850px) {
+  .cont form .user-name input,
+  .cont form .message textarea,
+  .cont form .send button{
+    width: 100%
+  }
+}
+@media (max-width:1100px) {
+  .personal{
+    left:40px
+  }
+}
